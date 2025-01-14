@@ -41,7 +41,20 @@
         ?>
     </section>
     <main>
-
+        <p>sigma</p>
+        <table>
+            <tr>
+                <td>Nazwa</td>
+                <td>Data</td>
+                <td>Status</td>
+                <td>
+                    <img src="check.png" alt="check">
+                </td>
+                <td>
+                    <img src="x.png" alt="x">
+                </td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>

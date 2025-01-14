@@ -60,3 +60,17 @@ form{
   flex-direction: row;
   justify-content: space-between;
 }
+
+table{
+  border-collapse: collapse;
+  border-radius: 40px;
+
+}
+
+tr{
+  border-collapse: collapse ;
+  width: 60vw;
+  height: 75px;
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
