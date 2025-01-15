@@ -61,8 +61,9 @@
                       else{
                           echo "Wykonane";
                       }
-                      echo "</p></div><div class='container2'><p><img src='' alt='check'></p>";
-                      echo "<p><img src='' alt='delete'></p>";
+                      echo "</p></div><div class='container2'>";
+                      echo "<p><img src='check.png' alt='check'></p>";
+                      echo "<p><img src='x.png' alt='delete'></p>";
                       echo "</div></li>";
                   }
                   echo "</ul>";
