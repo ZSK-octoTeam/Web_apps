@@ -23,7 +23,7 @@
         <?php
             if(isset($_POST["namee"]) && !empty($_POST["datee"])){
                 $conn = mysqli_connect("localhost", "root", "", "to_do");
-                if(mysqli_connect_error()){
+                if($conn -> connect_error){
                     die("Failed to connect to database" . mysqli_connect_error());
                 }
                 else{
@@ -41,6 +41,33 @@
         ?>
     </section>
     <main>
+          <?php
+              $conn = mysqli_connect("localhost", "root", "", "to_do");
+              if($conn -> connect_error){
+                  die("Failed to connect to database: " . mysqli_connect_error());
+              }
+              else{
+                  $sql = "SELECT * FROM `tasks`";
+                  $result = mysqli_query($conn, $sql);
+                  echo "<ul>";
+                  while($row = mysqli_fetch_assoc($result)){
+                      echo "<li><div class='container1'><p>" . $row["Name"] . "</p><p>" . $row["Time"] . "</p><p>";
+                      if($row["IsDone"] == NULL){
+                          echo "Oczekuje";
+                      }
+                      else if($row["IsDone"] == 0){
+                          echo "Zaległe";
+                      }
+                      else{
+                          echo "Wykonane";
+                      }
+                      echo "</p></div><div class='container2'><p><img src='' alt='check'></p>";
+                      echo "<p><img src='' alt='delete'></p>";
+                      echo "</div></li>";
+                  }
+                  echo "</ul>";
+              }
+          ?>
     </main>
 </body>
 </html>
