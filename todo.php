@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -41,20 +41,6 @@
         ?>
     </section>
     <main>
-        <p>sigma</p>
-        <table>
-            <tr>
-                <td>Nazwa</td>
-                <td>Data</td>
-                <td>Status</td>
-                <td>
-                    <img src="check.png" alt="check">
-                </td>
-                <td>
-                    <img src="x.png" alt="x">
-                </td>
-            </tr>
-        </table>
     </main>
 </body>
 </html>
