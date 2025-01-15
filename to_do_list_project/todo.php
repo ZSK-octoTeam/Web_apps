@@ -49,9 +49,9 @@
                 else{
                     $sql = "SELECT * FROM `tasks`";
                     $result = mysqli_query($conn, $sql);
-                    echo "<table>";
+                    echo "<ul>";
                     while($row = mysqli_fetch_assoc($result)){
-                        echo "<tr><td>" . $row["Name"] . "</td><td>" . $row["Time"] . "</td><td>";
+                        echo "<li><div class='container1'><p>" . $row["Name"] . "</p><p>" . $row["Time"] . "</p><p>";
                         if($row["IsDone"] == NULL){
                             echo "Oczekuje";
                         }
@@ -61,11 +61,11 @@
                         else{
                             echo "Wykonane";
                         }
-                        echo "</td><td><img src='' alt='check'></td>";
-                        echo "<td><img src='' alt='delete'></td>";
-                        echo "</tr>";
+                        echo "</p></div><div class='container2'><p><img src='' alt='check'></p>";
+                        echo "<p><img src='' alt='delete'></p>";
+                        echo "</div></li>";
                     }
-                    echo "</table>";
+                    echo "</ul>";
                 }
             ?>
     </main>
