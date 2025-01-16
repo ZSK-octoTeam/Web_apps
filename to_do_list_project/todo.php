@@ -63,7 +63,9 @@
                       }
                       echo "</p></div><div class='container2'>";
                       echo "<p><img src='check.png' alt='check'></p>";
+                      echo "<p class='nextP'>Mark as done</p>";
                       echo "<p><img src='x.png' alt='delete'></p>";
+                      echo "<p class='nextP'>Delete</p>";
                       echo "</div></li>";
                   }
                   echo "</ul>";
