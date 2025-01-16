@@ -10,10 +10,12 @@ $(document).ready(function(){
     $("img").next(".nextP").hide();
     $("img").hover(
         function() {
-            $(this).next(".nextP").fadeIn(300);
+            $(this).next(".nextP").fadeIn(200);
+            $(this).css("opacity", 0.5);
         },
         function() {
-            $(this).next(".nextP").fadeOut(300);
+            $(this).next(".nextP").fadeOut(200);
+            $(this).css("opacity", 1);
         }
     );
     $("img[src='check.png']").click(function() {
