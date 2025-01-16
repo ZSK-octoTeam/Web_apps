@@ -62,10 +62,10 @@
                           echo "Wykonane";
                       }
                       echo "</p></div><div class='container2'>";
-                      echo "<p><img src='check.png' alt='check'></p>";
-                      echo "<p class='nextP'>Mark as done</p>";
-                      echo "<p><img src='x.png' alt='delete'></p>";
-                      echo "<p class='nextP'>Delete</p>";
+                      echo "<div class='imgcontainer'><img src='check.png' alt='check'>";
+                      echo "<span class='nextP'>Mark as done</span></div>";
+                      echo "<div class='imgcontainer'><img src='x.png' alt='delete'>";
+                      echo "<span class='nextP'>Delete</span></div>";
                       echo "</div></li>";
                   }
                   echo "</ul>";
