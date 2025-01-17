@@ -144,7 +144,7 @@ footer{
   display: flex;
   flex-wrap: wrap;
   color: whitesmoke;
-  position: sticky;
+  position: fixed;
   bottom: 0;
 }
 
