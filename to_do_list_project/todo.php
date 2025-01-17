@@ -44,7 +44,7 @@
 
 <body>
     <header>
-        <h1>to do list</h1>
+        <h1>To do list</h1>
     </header>
     <section>
         <form action="" method="Post">
@@ -101,7 +101,14 @@
         mysqli_close($conn);
         ?>
     </main>
-
+    <footer>
+        <div class="left">
+            <p>Created by: Gustaw Grześkowiak and Filip Maciejewski</p>
+        </div>
+        <div class="right">
+            <a href="https://github.com/ZSK-octoTeam/Web_apps" target="blank"><img src="github-mark.png" alt="logo"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
