@@ -18,10 +18,14 @@ $(document).ready(function(){
             $(this).css("opacity", 1);
         }
     );
-    $("img[src='check.png']").click(function() {
-        
+    $("body").on("click", 'img[src$="x.png"]', function() {
+        let idi = $(this).closest('li').attr("id");
+        let url = 'todo.php?js_data=' + encodeURIComponent(idi);
+        window.location.href = url;
     });
-    $("img[src='x.png']").click(function() {
-        
+    $("body").on("click", 'img[src$="check.png"]', function() {
+        let idi = $(this).closest('li').attr("id");
+        let url = 'todo.php?js_dat=' + encodeURIComponent(idi);
+        window.location.href = url;
     });
 });
