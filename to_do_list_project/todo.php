@@ -62,7 +62,8 @@
                 $date = $_POST["datee"];
                 $sql = "INSERT INTO `tasks`(`Name`, `Time`) VALUES('$name', '$date')";
                 mysqli_query($conn, $sql);
-                $sqlTime = "UPDATE `tasks` SET IsDone=0 WHERE Time < CURRENT_DATE";
+                $last_id = mysqli_insert_id($conn);
+                $sqlTime = "UPDATE `tasks` SET IsDone=0 WHERE Time < CURRENT_DATE AND ID = '$last_id'";
                 $result1 = mysqli_query($conn, $sqlTime);
             }
             mysqli_close($conn);
